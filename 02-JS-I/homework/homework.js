@@ -9,7 +9,7 @@ const nuevaString = "cualquiera";
 const nuevoNum = 3;
 
 // Crea una variable booleana:
-const nuevoBool = true;
+const nuevoBool = false;
 
 // Resuelve el siguiente problema matemático:
 const nuevaResta = 10 - 5 === 5;
@@ -43,7 +43,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x;
+  return x - y;
 }
 
 function multiplica(x, y) {
@@ -62,7 +62,7 @@ function sonIguales(x, y) {
   // Devuelve "true" si "x" e "y" son iguales
   // De lo contrario, devuelve "false"
   // Tu código:
-  if  (x===y) {
+  if  (x === y) {
     return true;
   }
   else {return false;
@@ -81,7 +81,7 @@ function menosQueNoventa(num) {
   // De lo contrario, devuelve "false"
   // Tu código:
   if (num < 90) {
-    return true
+  return true
   } else {
   return false
   }
@@ -183,21 +183,22 @@ function agregarSimboloExclamacion(str) {
   // Agrega un símbolo de exclamación al final de la string "str" y devuelve una nueva string
   // Ejemplo: "hello world" pasaría a ser "hello world!"
   // Tu código:
-  return "str" + "!"
+  return str + "!"
 }
 
 function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  return "nombre " + "apellido"
+  var combinado = nombre + " " + apellido;
+  return combinado;
 }
 
 function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return "saludo " + "nombre!"
+  return "Hola " + "Martin" + "!";
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -210,14 +211,14 @@ function obtenerAreaRectangulo(alto, ancho) {
 function retornarPerimetro(lado){
   //Escibe una función a la cual reciba el valor del lado de un cuadrado y retorne su perímetro.
   //Escribe tu código aquí
-  return (lado * lado)
+  return (lado * 4)
 }
 
 
 function areaDelTriangulo(base, altura){
   //Desarrolle una función que calcule el área de un triángulo.
   //Escribe tu código aquí
-return (base * altura)
+return (base * altura / 2)
 }
 
 
@@ -235,22 +236,14 @@ function esVocal(letra){
   //que no se puede procesar el dato mediante el mensaje "Dato incorrecto".
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
-if (letra.length > 1) 
+if (letra.length > 1){
   return "Dato incorrecto"
-switch (letra) {
-  case "A":
-   return "Es vocal"
-  case "E":
-   return "Es vocal"
-  case "I":
-    return "Es vocal"
-  case "O":
-    return "Es vocal"
-  case "U":
-    return "Es vocal"
-  default:
-    return "dato incorrecto"
 }
+if (letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") {
+ return "Es vocal"
+}
+return "Dato incorrecto"
+
 }
 
 
