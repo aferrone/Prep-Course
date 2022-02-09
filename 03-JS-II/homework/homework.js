@@ -5,12 +5,19 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
+
 }
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
+  if (edad > 18){
+    return "Allowed"
+  }
+  else (edad < 18) 
+    return "Not allowed"
+
 }
   
 function conection(status) {
@@ -28,7 +35,16 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-}
+  while (idioma === "aleman") {
+  return "Guten Tag!" }
+  while (idioma === "mandarin") {
+    return "Ni Hao!"}
+    if (idioma === "ingles") { 
+      return "Hello!"} 
+       else {
+        return "Hello!";
+  }
+      
 
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
@@ -44,12 +60,20 @@ function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero === 5 || numero === 10){
+  return true 
+  }
+  return False 
 }
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
+  if (numero < 50 || numero > 20) {
+    return true
+  }
+  return false
 }
 
 function esEntero(numero) {
@@ -67,6 +91,14 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if (numero / 3) 
+   return "fizz" 
+  else if (numero / 5)
+   return "buzz"
+   else if (numero / 3 || numero / 5) {
+   return "fizzbuzz"
+   }
+   return (numero)
 }
 
 function operadoresLogicos(num1, num2, num3) {
