@@ -85,7 +85,9 @@ function esDiezOCinco(numero) {
   if (numero === 5 || numero === 10){
   return true 
   }
-  return False 
+  else {
+    return false
+  } 
 }
 
 function estaEnRango(numero) {
@@ -95,6 +97,7 @@ function estaEnRango(numero) {
   if (numero < 50 || numero > 20) {
     return true
   }
+  else {
   return false
 }
 
@@ -106,6 +109,12 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if (numero - Math.floor(numero) === 0) {
+  return true;
+   }
+    else {
+    return false;
+  }
 }
 
 function fizzBuzz(numero) {
@@ -130,6 +139,7 @@ function operadoresLogicos(num1, num2, num3) {
   //Si num3 es más grande que num1 y num2, aumentar su valor en 1 y retornar el nuevo valor.
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
+  
 }
 
 function esPrimo(numero) {
