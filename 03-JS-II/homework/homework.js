@@ -30,14 +30,15 @@ function conection(status) {
   } if (status === 2) {
     return "Away"}
     else { 
-    return "Offline";
+    return "Offline"
   }
+}
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
   //Cuando el estado es igual a 2, el usuario está "Away"
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
-}
+
 
 function saludo(idioma) {
   // Devuelve un saludo en tres diferentes lenguajes:
@@ -53,8 +54,9 @@ function saludo(idioma) {
     if (idioma === "ingles") { 
       return "Hello!"} 
        else {
-        return "Hello!";
+        return "Hello!"
   }
+}
       
 
 function colors(color) {
@@ -67,15 +69,16 @@ function colors(color) {
   //Usar el statement Switch.
   switch (color){ 
     case "blue":  
-     return "This is blue";
+     return "This is blue"
       case "red":
-       return "This is red";
+       return "This is red"
         case "green":
-         return "This is green";
+         return "This is green"
           case "orange":
-            return "This is Orange"; 
+            return "This is Orange" 
              case "default":
-               return "Color not found";  
+               return "Color not found" 
+  } 
 }
 
 function esDiezOCinco(numero) {
@@ -99,6 +102,7 @@ function estaEnRango(numero) {
   }
   else {
   return false
+  }
 }
 
 function esEntero(numero) {
@@ -110,10 +114,10 @@ function esEntero(numero) {
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
   if (numero - Math.floor(numero) === 0) {
-  return true;
+  return true
    }
     else {
-    return false;
+    return false
   }
 }
 
@@ -140,19 +144,19 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   if (num1 > num2,num3, math.sign(1)) {
-    return "Numero 1 es mayor y positivo";
+    return "Numero 1 es mayor y positivo"
   }
     else if (num1,num2,num3 === math.sign(-1)) {
-      return "Hay negativos";
+      return "Hay negativos"
     }
     else if (num3 > num1, num2){ 
-      return math.ceil(num1);
+      return math.ceil(num1)
     }
     else if (num1, num2,num3 === 0){
-      return "error";  
+      return "error"
     }
     else {
-      return false;
+      return false
     }
 }
 
@@ -166,7 +170,7 @@ function esPrimo(numero) {
    return false
   
   for(let x = 2; x < numero / 2; x++){
-    if (numero % x === 0) return false;
+    if (numero % x === 0) return false
   
   else 
     return true
@@ -182,7 +186,7 @@ if (valor === true) {
 return "Soy verdadero"
 }
  else if (valor === false){
-   return "Soy Falso";
+   return "Soy Falso"
  }
 }
 
@@ -193,7 +197,8 @@ function tablaDelSeis(tabla){
   var tabla = 6
   var cantidad = 10 
   for (var i = 6; i<=cantidad; i++){
-    console.log(i);
+    console.log(i)
+  }
   
 }
 
@@ -214,9 +219,9 @@ function doWhile(numero) {
   //Retornar el valor final.
   //Usar el bucle do ... while.
  do {
-   numero += 5;
-   document.write(numero);
- } while (numero > 8);
+   numero =+ 5
+   document.write(numero)
+ } while (numero > 8)
 }
 
 
@@ -239,4 +244,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-};
+}
