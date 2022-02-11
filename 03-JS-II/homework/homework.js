@@ -16,17 +16,17 @@ function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
   //Si tiene 18 años ó más, devolver --> "Allowed"
   //Si es menor, devolver --> "Not allowed"
-  if (edad > 18){
+  if (edad >= 18){
     return "Allowed"
   }
-  else (edad < 18) 
+  else { 
     return "Not allowed"
-
+  }
 }
   
 function conection(status) {
   while (status === 1) {
-    return "online"
+    return "Online"
   } if (status === 2) {
     return "Away"}
     else { 
@@ -53,10 +53,12 @@ function saludo(idioma) {
     return "Ni Hao!"}
     if (idioma === "ingles") { 
       return "Hello!"} 
-       else {
+       
+       else if (idioma === "undefined"){
+       
         return "Hello!"
+      }
   }
-}
       
 
 function colors(color) {
@@ -75,7 +77,7 @@ function colors(color) {
         case "green":
          return "This is green"
           case "orange":
-            return "This is Orange" 
+            return "This is orange" 
              case "default":
                return "Color not found" 
   } 
@@ -99,10 +101,10 @@ function estaEnRango(numero) {
   // Tu código:
   if (numero < 50 || numero > 20) {
     return true
+  } else {
+     return false
   }
-  else {
-  return false
-  }
+  
 }
 
 function esEntero(numero) {
@@ -126,14 +128,16 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
-  if (numero / 3) 
-   return "fizz" 
-  else if (numero / 5)
-   return "buzz"
-   else if (numero / 3 || numero / 5) {
-   return "fizzbuzz"
-   }
-   return (numero)
+   if (numero / 3) {
+    return "fizz" 
+   } else
+        if (numero / 5) { 
+    return "buzz" 
+   } else 
+       if (numero / 3 || numero / 5) {
+    return "fizzbuzz" }
+     return (numero) 
+    
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -185,8 +189,8 @@ function esVerdadero(valor){
 if (valor === true) {
 return "Soy verdadero"
 }
- else if (valor === false){
-   return "Soy Falso"
+ else if (valor === false) {
+   return "Soy falso"
  }
 }
 
@@ -194,11 +198,9 @@ function tablaDelSeis(tabla){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  var tabla = 6
-  var cantidad = 10 
-  for (var i = 6; i<=cantidad; i++){
-    console.log(i)
-  }
+ if (tabla) {
+   return [6*1, 6*2, 6*3, 6*4, 6*5, 6*6, 6*7,6*8, 6*9, 6*10]
+ }
   
 }
 
@@ -218,10 +220,10 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
- do {
-   numero =+ 5
-   document.write(numero)
- } while (numero > 8)
+do { 
+  numero++
+  } while (numero < 8)
+
 }
 
 
