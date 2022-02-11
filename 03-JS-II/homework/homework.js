@@ -78,8 +78,9 @@ function colors(color) {
          return "This is green"
           case "orange":
             return "This is orange" 
-             case "default":
-               return "Color not found" 
+  }
+    if (color === "default")  {      
+      return "Color not found" 
   } 
 }
 
@@ -99,12 +100,10 @@ function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (numero < 50 || numero > 20) {
+  if (numero < 50 || numero > 20) 
     return true
-  } else {
-     return false
-  }
-  
+  else 
+    return false
 }
 
 function esEntero(numero) {
@@ -199,7 +198,7 @@ function tablaDelSeis(tabla){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
  if (tabla) {
-   return [6*1, 6*2, 6*3, 6*4, 6*5, 6*6, 6*7,6*8, 6*9, 6*10]
+   return [6*0,6*1, 6*2, 6*3, 6*4, 6*5, 6*6, 6*7,6*8, 6*9, 6*10]
  }
   
 }
@@ -210,7 +209,7 @@ function tieneTresDigitos(numero){
   if (numero >= 100 || numero <=999){
    return true
  }
-  else {
+  else if (numero <=100){
    return false
   }
   
